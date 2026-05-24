@@ -19,6 +19,7 @@ body {
   width: 400px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 h1 {
@@ -87,4 +88,15 @@ button:hover {
   text-align: right;
   color: #666;
   font-style: italic;
+}
+
+#quote-display {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-title {
+  margin: 10px;
 }
