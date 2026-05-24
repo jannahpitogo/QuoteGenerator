@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Quote Generator</h1>
+
+        <div class="form-group">
+            <label for="quote">Quote</label>
+            <textarea id="quote" placeholder="Enter your quote"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" id="author" placeholder="Enter author name" />
+        </div>
+
+        <button onclick="generateQuote()">Generate Quote</button>
+
+        <div class="quote-box" id="quoteBox">
+            <p class="quote-text" id="displayQuote"></p>
+            <p class="quote-author" id="displayAuthor"></p>
+        </div>
+    </div>
+    <script src="/public/script.js"></script>
+</body>
+
+</html>
