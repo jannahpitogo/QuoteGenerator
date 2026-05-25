@@ -5,39 +5,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quote Generator</title>
-    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <div class="container">
 
-
         <div id="quote-display">
             <h1>Quote For Today</h1>
-            <p>Quote Here</p>
+            <p id="quote-container">Quote Here</p>
+            <button id="new-quote-button">New Quote</button>
         </div>
 
-        <h3 class="add-title">Add Your Own Quote</h3>
+        <form id="quote-form">
+            <h3 class="add-title">Add Your Own Quote</h3>
 
-        <div class="form-group">
             <label for="quote">Quote</label>
-            <textarea id="quote" placeholder="Enter your quote"></textarea>
-        </div>
+            <input type="text" id="quote" placeholder="Enter your quote" />
 
-        <div class="form-group">
             <label for="author">Author</label>
             <input type="text" id="author" placeholder="Enter author name" />
-        </div>
 
-        <button onclick="generateQuote()">Generate Quote</button>
-
-        <div class="quote-box" id="quoteBox">
-            <p class="quote-text" id="displayQuote"></p>
-            <p class="quote-author" id="displayAuthor"></p>
-        </div>
+            <button type="submit">Generate Quote</button>
+        </form>
     </div>
-    <script src="/public/script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
