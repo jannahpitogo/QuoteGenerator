@@ -46,6 +46,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
+  margin: 5px;
 }
 
 textarea {
@@ -99,4 +100,12 @@ button:hover {
 
 .add-title {
   margin: 10px;
+}
+
+#quote-container {
+  margin: 30px;
+}
+
+label {
+  margin: 5px;
 }

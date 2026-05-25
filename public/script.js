@@ -18,7 +18,9 @@ form.addEventListener("submit", async (event) => {
   });
 
   const data = await res.text();
-  console.log(data);
+  form.reset();
+
+  return data;
 });
 
 async function newQuote() {
